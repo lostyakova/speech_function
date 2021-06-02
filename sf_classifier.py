@@ -452,10 +452,6 @@ def get_label_for_question(phrase,y_pred,current_speaker, previous_speaker, true
     return y_pred
 
 
-# In[242]:
-
-
-print(get_label_for_question('What was it called?','React.Rejoinder.','SHER', 'SHAN',true_tracks,lr2, interrogative_words))
 
 
 # # Sustain
@@ -606,11 +602,6 @@ def get_label_for_responds(phrase,previous_phrase, y_pred,y_pred_previous,curren
             y_pred='React.Rejoinder.Challenge.Counter'
     return y_pred
 
-
-# In[259]:
-
-
-print(get_label_for_responds('Oh there they are.','Where?', 'React.Respond.','React.Rejoinder.' ,'1','1', lr_reply, lr_responds))
 
 
 # # Rejoinder
