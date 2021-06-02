@@ -37,7 +37,7 @@ nlp = spacy.load("en_core_web_sm")
 # In[6]:
 
 
-with open('/home/postyakov/Documents/lidochka/labeled data/cor.json') as data:
+with open('labeled_data.json') as data:
     file = json.load(data)
 
 
@@ -324,7 +324,7 @@ all_cuts.extend(cut_test_labels)
 # In[33]:
 
 
-path2 = '/home/postyakov/Documents/lidochka/res/SBC058.json'
+path2 = 'SBC058.json'
 with open(path2) as proba:
     proba=json.load(proba)
     dialogue = proba['text']
@@ -806,13 +806,7 @@ def classify_labels(phrases,speakers):
     return y_preds
 
 
-# In[273]:
 
-
-y_preds=classify_labels(phrases,speakers)
-
-
-# In[ ]:
 
 
 
