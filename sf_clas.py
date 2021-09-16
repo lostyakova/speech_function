@@ -331,16 +331,16 @@ all_cuts.extend(cut_test_labels)
 # In[36]:
 
 
-path2 = '/home/postyakov/Documents/lidochka/res/SBC058.json'
-with open(path2) as proba:
-    proba=json.load(proba)
-    dialogue = proba['text']
-    dialogue = [i for i in dialogue if not (i['phrase'] == 'PAUSE')]
-    phrases = []
-    speakers=[]
-    for i in range(len(dialogue)):
-        phrases.append(dialogue[i]['phrase'])
-        speakers.append(dialogue[i]['speaker'])
+# path2 = 'SBC058.json'
+# with open(path2) as proba:
+#     proba=json.load(proba)
+#     dialogue = proba['text']
+#     dialogue = [i for i in dialogue if not (i['phrase'] == 'PAUSE')]
+#     phrases = []
+#     speakers=[]
+#     for i in range(len(dialogue)):
+#         phrases.append(dialogue[i]['phrase'])
+#         speakers.append(dialogue[i]['speaker'])
 
 
 # In[37]:
