@@ -44,7 +44,7 @@ nlp = spacy.load("en_core_web_sm")
 # In[10]:
 
 
-with open('/home/postyakov/Documents/lidochka/labeled data/cor.json') as data:
+with open('labeled data.json') as data:
     file = json.load(data)
 
 
